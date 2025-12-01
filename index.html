@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TriviaWorld</title>
+</head>
+<body>
+
+    <h1>Trivia World</h1>
+
+    <form>
+
+        <label for="amount">How many questions?</label>
+        <input name="amount" type="number" min="1" placeholder="Enter a positive number" required>
+
+        <label for="categories">Choose your category</label>
+        <select name="categories" id="categories">
+            <!-- Options läggs till via JavaScript -->
+        </select>
+
+        <p>Select difficulty:</p>
+        <input type="radio" id="difficulty1" name="Difficulty" value="Easy">
+        <label for="difficulty1">Easy</label><br>
+
+        <input type="radio" id="difficulty2" name="Difficulty" value="Medium">
+        <label for="difficulty2">Medium</label><br>
+
+        <input type="radio" id="difficulty3" name="Difficulty" value="Hard">
+        <label for="difficulty3">Hard</label><br><br>
+
+        <button type="submit">Get Questions</button>
+    </form>
+
+    <!-- Här visas felmeddelanden -->
+    <p id="error"></p>
+
+    <!-- Här skrivs frågorna ut -->
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
